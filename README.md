@@ -1,2 +1,2 @@
 # SyncroFlow
-Proyecto Inicial
+Sincronizando tus procesos, potenciando tu éxito.
