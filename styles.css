@@ -7,6 +7,8 @@ body {
     min-height: 100vh;
     width: 100%; /* Asegura que el body use todo el ancho */
     box-sizing: border-box; /* Incluye padding y border en el tamaño del elemento */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -153,7 +155,7 @@ footer {
     color: white;
     padding: 20px;
     font-size: 1em;
-    margin-top: 40px;
+    margin-top: auto; /* Hace que el footer se quede al final de la pantalla */
     width: 100%;
     text-align: center; /* Centra el texto del footer */
     box-sizing: border-box; /* Asegura que el footer use todo el ancho */
