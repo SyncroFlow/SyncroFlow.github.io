@@ -46,7 +46,7 @@ nav {
     padding: 15px;
     width: 100%;
     display: flex;
-    justify-content: flex-end; /* Justifica los elementos a la derecha */
+    justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center;
     position: relative;
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
@@ -67,7 +67,7 @@ nav {
     display: flex;
     gap: 10px; /* Reduce el espacio entre los botones */
     width: auto;
-    justify-content: flex-end; /* Justifica los elementos a la derecha */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 .menu a {
@@ -101,6 +101,7 @@ section {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     display: none;
+    text-align: center; /* Centra el texto de las secciones */
 }
 
 .container {
@@ -219,6 +220,11 @@ footer {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
+    .menu {
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
     .container {
         flex-wrap: wrap;
     }
