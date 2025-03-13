@@ -31,4 +31,20 @@ function showSection(sectionId) {
 
 document.addEventListener("DOMContentLoaded", function() {
     showSection('about'); // Asegura que la primera sección visible sea "Sobre Mí"
+
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Scroll hacia abajo - esconder header
+            header.style.top = '-100px'; // Cambia el valor según la altura del header
+        } else {
+            // Scroll hacia arriba - mostrar header
+            header.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
 });
