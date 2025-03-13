@@ -1,11 +1,15 @@
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     const menuToggle = document.querySelector('.menu-toggle');
-    menu.classList.toggle('active');
-    if (menu.classList.contains('active')) {
-        menuToggle.style.display = 'none';
-    } else {
-        menuToggle.style.display = 'block';
+    const isMobileView = window.innerWidth <= 600;
+
+    if (isMobileView) {
+        menu.classList.toggle('active');
+        if (menu.classList.contains('active')) {
+            menuToggle.style.display = 'none';
+        } else {
+            menuToggle.style.display = 'block';
+        }
     }
 }
 
@@ -17,8 +21,12 @@ function showSection(sectionId) {
     document.getElementById(sectionId).style.display = 'block';
     const menu = document.querySelector('.menu');
     const menuToggle = document.querySelector('.menu-toggle');
-    menu.classList.remove('active');
-    menuToggle.style.display = 'block';
+    const isMobileView = window.innerWidth <= 600;
+
+    if (isMobileView) {
+        menu.classList.remove('active');
+        menuToggle.style.display = 'block';
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
