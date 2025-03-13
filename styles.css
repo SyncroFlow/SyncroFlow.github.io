@@ -41,6 +41,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .menu-toggle {
