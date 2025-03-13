@@ -18,18 +18,25 @@ header {
     left: 0;
     z-index: 1000;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 header h1 {
     font-size: 2em;
     margin: 0;
     font-weight: bold;
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 header p {
     font-size: 1em;
     margin-top: 5px;
     opacity: 0.9;
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 nav {
