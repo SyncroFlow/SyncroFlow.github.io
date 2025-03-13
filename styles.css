@@ -44,7 +44,7 @@ nav {
     padding: 15px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center;
     position: relative;
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
@@ -63,9 +63,9 @@ nav {
 
 .menu {
     display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: space-between;
+    gap: 10px; /* Reduce el espacio entre los botones */
+    width: auto;
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 .menu a {
