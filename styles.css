@@ -109,6 +109,8 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    width: 100%; /* Asegura que el contenedor use todo el ancho */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño del elemento */
 }
 
 .card {
@@ -220,6 +222,10 @@ footer {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
+    .menu-toggle {
+        display: none; /* Oculta el botón de menú en vista de computadora */
+    }
+
     .menu {
         display: flex;
         justify-content: center; /* Centra los elementos horizontalmente */
@@ -227,19 +233,32 @@ footer {
 
     .container {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .card {
         flex: 1 1 45%;
+        max-width: 45%; /* Asegura que las tarjetas no superen el ancho del contenedor */
     }
 }
 
 @media (min-width: 1025px) {
+    .menu-toggle {
+        display: none; /* Oculta el botón de menú en vista de computadora */
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
     .container {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .card {
         flex: 1 1 30%;
+        max-width: 30%; /* Asegura que las tarjetas no superen el ancho del contenedor */
     }
 }
