@@ -14,11 +14,14 @@
         <p>Transformando negocios con automatización y tecnología inteligente</p>
     </header>
     <nav>
-        <a href="#" onclick="showSection('about')">Sobre Mí</a>
-        <a href="#" onclick="showSection('services')">Servicios</a>
-        <a href="#" onclick="showSection('portfolio')">Portafolio</a>
-        <a href="#" onclick="showSection('blog')">Blog</a>
-        <a href="#" onclick="showSection('contact')">Contacto</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div class="menu">
+            <a href="#" onclick="showSection('about')">Sobre Mí</a>
+            <a href="#" onclick="showSection('services')">Servicios</a>
+            <a href="#" onclick="showSection('portfolio')">Portafolio</a>
+            <a href="#" onclick="showSection('blog')">Blog</a>
+            <a href="#" onclick="showSection('contact')">Contacto</a>
+        </div>
     </nav>
     <main>
         <section id="about" class="active" style="display: block;">
@@ -87,5 +90,11 @@
         <p>&copy; 2025 Noé Del Cid | Innovación & Automatización</p>
     </footer>
     <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
