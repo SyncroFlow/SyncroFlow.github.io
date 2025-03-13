@@ -37,11 +37,24 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     position: relative;
 }
 
-nav a {
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -52,7 +65,7 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
+.menu a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
@@ -140,12 +153,23 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
+    .menu-toggle {
+        display: block;
     }
 
-    nav a {
-        margin-bottom: 10px;
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .container {
