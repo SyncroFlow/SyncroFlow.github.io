@@ -7,6 +7,13 @@ function showSection(sectionId) {
     });
     section.classList.add('active');
     section.style.display = 'block';
+    const menu = document.querySelector('.menu');
+    menu.classList.remove('active');
+}
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
 }
 
 document.addEventListener("DOMContentLoaded", function() {
