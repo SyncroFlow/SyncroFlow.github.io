@@ -115,13 +115,13 @@ section {
 
 .card {
     background: #ffffff;
-    padding: 10px;
+    padding: 0px;
     border-radius: 10px;
     box-shadow: 0px 5px 12px rgba(0,0,0,0.15);
     width: 100%;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 5px; /* Aplica un margen de 10px en todos los lados */
+    margin: 0px; /* Aplica un margen de 10px en todos los lados */
 }
 
 .card h3 {
