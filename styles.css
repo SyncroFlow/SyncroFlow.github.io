@@ -121,7 +121,7 @@ section {
     width: 100%;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0; /* Quita el margen */
+    margin: 20px; /* Aplica un margen de 20px en todos los lados */
 }
 
 .card h3 {
@@ -259,7 +259,8 @@ footer {
     }
 
     .card {
-        flex: 1 1 30%;
-        max-width: 30%; /* Asegura que las tarjetas no superen el ancho del contenedor */
+        flex: 1 1 45%; /* Cambia el tamaño de las tarjetas al 45% del contenedor */
+        max-width: 45%; /* Asegura que las tarjetas no superen el ancho del contenedor */
+        margin: 20px; /* Aplica un margen de 20px en todas las vistas */
     }
 }
