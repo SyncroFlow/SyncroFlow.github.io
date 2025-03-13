@@ -259,8 +259,8 @@ footer {
     }
 
     .card {
-        flex: 1 1 30%; /* Cambia el tamaño de las tarjetas al 30% del contenedor */
-        max-width: 30%; /* Asegura que las tarjetas no superen el ancho del contenedor */
-        margin: 10px; /* Aplica un margen de 20px en todas las vistas */
+        flex: 1 1 35%; /* Cambia el tamaño de las tarjetas al 30% del contenedor */
+        max-width: 35%; /* Asegura que las tarjetas no superen el ancho del contenedor */
+        margin: 10px; /* Aplica un margen de 10px en todas las vistas */
     }
 }
