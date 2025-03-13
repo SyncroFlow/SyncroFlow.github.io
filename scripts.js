@@ -13,7 +13,13 @@ function showSection(sectionId) {
 
 function toggleMenu() {
     const menu = document.querySelector('.menu');
+    const menuToggle = document.querySelector('.menu-toggle');
     menu.classList.toggle('active');
+    if (menu.classList.contains('active')) {
+        menuToggle.style.display = 'none';
+    } else {
+        menuToggle.style.display = 'block';
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
