@@ -1,12 +1,16 @@
-<html>
-<script>
-    function loadContent() {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data);
-</script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncroFlow</title>
+    <meta name="description" content="Optimización de procesos empresariales con automatización, integración de sistemas y transformación digital.">
+    <meta name="keywords" content="automatización de procesos, transformación digital, integración de sistemas, Google Scripts, Zapier, Webhooks">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <div id="header-placeholder"></div>
+  <header>
+  </header>    
     <nav>
         <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
         <div class="menu">
@@ -82,15 +86,10 @@
         </section>
     </main>
     <a href="#contact" class="fixed-btn" onclick="showSection('contact')">Solicita una consulta gratuita</a>
-    <div id="footer-placeholder"></div>
+    <footer>
+        <p>&copy; SyncroFlow | Sincronizando tus procesos, potenciando tu éxito.</p>
+    </footer>
     <script src="scripts.js"></script>
-    <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-        }
-        // Llamar a la función cuando se carga la página
-        document.addEventListener('DOMContentLoaded', loadContent);
-    </script>
 </body>
+    
 </html>
